@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('Asset/Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 95%;
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.photo-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #00000080;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 8px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 180px;
+    user-select: none;
+}
+
+.photo-name {
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.photo-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    pointer-events: none;
+    user-select: none;
+}
+
+.photo-button:hover,
+.photo-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #ffffff7a;
+    transform: scale(1.05);
+}
+
+#biodata-display {
+    background: #00000080;
+    padding: 20px 15px;
+    border-radius: 16px;
+}
+
+#biodata-display h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.member-biodata {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.data-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.label {
+    flex: 0 0 85px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.value {
+    flex: 1 1 auto;
+    color: #ffffff;
+}
+
+@media (max-width: 320px) {
+    .data-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .label, .value {
+        width: 100%;
+        font-size: 1rem;
+    }
+    .label {
+        margin-bottom: 4px;
+    }
+    .member-biodata p {
+        margin-bottom: 16px;
+    }
+    #biodata-display h2 {
+        font-size: 2rem;
+    }
+}
+
+#default-text {
+    text-align: center;
+    font-style: italic;
+    color: #cacaca;
+    font-size: 1.1rem;
+}
+
+.running-text-container {
+    margin-top: 10px;
+    border-radius: 12px;
+    padding: 12px 16px;
+    overflow: hidden;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.running-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.copyright-by {
+    text-align: center;
+    margin-top: 2px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
