@@ -77,19 +77,17 @@ h1 {
 
 #biodata-display {
     background: #00000080;
-    margin: 25px
-    padding: 20px 15px;
+    padding: 20px 20px;
     border-radius: 16px;
 }
 
 #biodata-display h2 {
     text-align: center;
-    margin-bottom: 20px;
+    max-width: 600px;
+    margin: 20px auto;
     color: #ffffff;
-    text-align: center;
-    margin: 20px 0;
+    font-weight: 700;
     font-size: 2.5rem;
-    color: #ffffff;
 }
 
 .member-biodata {
