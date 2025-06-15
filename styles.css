@@ -138,6 +138,7 @@ h1 {
 #default-text {
     text-align: center;
     font-style: italic;
+    margin: 15px;
     color: #cacaca;
     font-size: 1.1rem;
 }
